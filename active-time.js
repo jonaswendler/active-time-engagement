@@ -1,5 +1,4 @@
-<script>
-  (function() {
+(function() {
     var startEngage = new Date().getTime();
     var timeEngaged = 0;
     var idleTime = 0;
@@ -46,7 +45,7 @@
       // Fix possible beforeunload duplication problem
       if (evt && evt.type === 'beforeunload') {
       window.removeEventListener('beforeunload', reportUnload);
-      };
+      }
       sessionStorage.removeItem('active_time');
     };
     
@@ -77,4 +76,3 @@
     idleTimer = window.setTimeout(setIdle, 5000);
     reportTimer = window.setTimeout(report, 15000);
   })();
-</script>
