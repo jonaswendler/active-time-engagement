@@ -16,3 +16,6 @@ Changes:
 - Changed key-value pair namings
 
 Beforeunload now doesn't send the time as well, though users that only spent a second probably shouldn't be counted anyway imho.
+
+Issues:
+- SPA sites obviously do not work - and are generally a pain in the back (the new iframe?). I'd change the timer to 30sec or simply increase the Hits per Session Limit if the company/client has the premium version (360).
